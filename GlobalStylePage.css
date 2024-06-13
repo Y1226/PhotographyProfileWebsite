@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'article'
+        'footer';
+    grid-template-rows: 2.5rem 41rem 2.5rem;
+    text-align: center;
+    margin: 0px 0px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    grid-area: header;
+    border-bottom: 1px solid gray;    
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding: 2px 2px;
+}

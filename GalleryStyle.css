@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'article'
+        'footer';
+    grid-template-rows: 2.5rem 1fr 2.5rem;
+    text-align: center;
+    margin: 0px 0px;
+    background-color: black;
+    color: white;
+}
+
+.GalleryItem {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 1% 1%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: left;
+    margin-left: 7%;
+}

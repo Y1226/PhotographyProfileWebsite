@@ -1,0 +1,78 @@
+article {
+    display: grid;
+    grid-template-areas: 
+        'text main'
+        'info main';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 40%;
+    padding: 3rem;
+}
+
+text {
+    grid-area: text;
+}
+
+main {
+    grid-area: main;
+}
+
+info {
+    grid-area: info;
+    display: grid;
+    grid-template-areas: 
+        'button button'
+        'numbers1 numbers2';
+    grid-template-rows: 1.5rem 1fr;
+}
+
+#inTouch {
+    grid-area: button;
+    background-color: black;
+    color: white;
+    border: 2px solid white ;
+}
+
+#inTouch:hover {
+    background-color: white;
+    color: black;
+}
+
+numbers1 {
+    grid-area: numbers1;
+}
+
+numbers2 {
+    grid-area: numbers2;
+}
+
+
+@media screen and (max-width:400px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+            'header'
+            'article'
+            'footer';
+        grid-template-columns: 100%;
+        grid-template-rows: 2.5rem 1fr 2.5rem;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    article {
+        display: grid;
+        grid-template-areas: 
+            'text text'
+            'info info';
+        grid-template-rows: 1fr 1fr;
+    }
+
+    text {
+        grid-area: text;
+    }
+    
+    info {
+        grid-area: info;
+    }
+}
